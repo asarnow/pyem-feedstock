@@ -1,5 +1,5 @@
 {% set name = "pyem" %}
-{% set version = "0.65" %}
+{% set version = "0.66" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/asarnow/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c2432f37ac4622fbee1732f692cb821d976fecb2c3b9f7e935abe7d681b3d0ce
+  sha256: e449f2aeced10ca6fd48a04586c37f151b8fee3f93395079cd5040e0ff26d5c4
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
